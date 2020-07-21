@@ -6,8 +6,7 @@
 ## fast JSON formatting (Caché / Ensemble)
 It's also an example for a customized command extension (ZZJSN) in Caché & IRIS 
   
-This is the Caché version for fast JSON formatting.  
-It also works in IRIS to make development easier.  
+This is the Caché version for fast JSON formatting but it also works in IRIS.   
 To allow parallel existence in IRIS this is named ZZJSN
 
 see:
