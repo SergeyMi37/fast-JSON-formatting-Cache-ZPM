@@ -8,8 +8,8 @@
       <Keywords>JSON, COS, SYS</Keywords>
       <Packaging>module</Packaging>
       <SourcesRoot>src</SourcesRoot>
-       <Resource Name="ZZJSON.INC"/>
        <Resource Name="ZPretty.MAC"/>
+       <Resource Name="ZZJSON.INC"/>
     </Module>
   </Document>
 </Export>
