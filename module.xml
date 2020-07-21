@@ -4,7 +4,7 @@
     <Module>
       <Name>fast-json-format-cache</Name>
       <Version>1.0.0</Version>
-      <Description>produce pretty JSON output for IRIS</Description>
+      <Description>produce pretty JSON output for Caché / Ensemble</Description>
       <Keywords>JSON, COS, SYS</Keywords>
       <Packaging>module</Packaging>
       <SourcesRoot>src</SourcesRoot>
