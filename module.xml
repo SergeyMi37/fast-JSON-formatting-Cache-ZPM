@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Export generator="Cache" version="25">
-  <Document name="fast-json-format.ZPM">
+  <Document name="json-format-cache.ZPM">
     <Module>
-      <Name>fast-json-format</Name>
-      <Version>1.0.1</Version>
+      <Name>json-format-cache</Name>
+      <Version>1.0.0</Version>
       <Description>produce pretty JSON output for IRIS</Description>
       <Keywords>JSON, COS, SYS</Keywords>
       <Packaging>module</Packaging>
       <SourcesRoot>src</SourcesRoot>
        <Resource Name="ZZJSON.INC"/>
+       <Resource Name="ZPretty.MAC"/>
     </Module>
   </Document>
 </Export>
