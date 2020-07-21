@@ -1,52 +1,71 @@
  ~~~
- This is a coding example working on IRIS 2020.2 
+ This is a coding example working on Caché 2018.1.3  and IRIS 2020.2 
  It will not be kept in sync with new versions      
  It is also NOT serviced by InterSystems Support !   
 ~~~ 
-# fast JSON formatting (IRIS)
-It's also an example for a customized command extension (ZZJSON) in IRIS 
+# fast JSON formatting (CACHÉ)
+It's also an example for a customized command extension (ZZJSN) in Caché & IRIS 
   
-IRIS has a nice %JSON.Formatter class.
-But for debugging it is not really handy.  
+This is the Caché version for fast JSON formatting.
+It also works in IRIS to make development easier.
+To allow parallel existens in IRIS this is named ZZJSN
+
 see:
 ```
-ZWRITE js1  
-js1="{""Name"":""Cunningham,John C."",""SSN"":""294-11-9150"",""DOB"":""1933-01-08"",""Home"":{""Street"":""4249 Ash Street"",""City"":""Tampa"",""State"":""MD"",""Zip"":""30176""},""FavoriteColors"":\[""White"",""Red"",""Green""]}"   
+USER>ZWRITE jsn  
+jsn="{"Name":"Li,Robert K.","SSN":"672-92-9664","DOB":"1975-01-12","Home":{"Street":"986 Washington Blvd","City":"Boston","State":"PA","Zip":"95802"},"Office":{"Street":"6012 First Place","City":"Reston","State":"MT","Zip":"77739"},"Spouse":{"Name":"Avery,Zelda H.","SSN":"323-13-7437","DOB":"1943-03-27","Home":{"Street":"196 Main Drive","City":"Youngstown","State":"WY","Zip":"53229"},"Office":{"Street":"4056 Franklin Court","City":"Bensonhurst","State":"IA","Zip":"27688"},"FavoriteColors":["Black"],"Age":77},"Age":45,"Title":"Associate Marketing Manager","Salary":10421}" 
 ```  
-so you proceed  for the most simple case  
-```    
-set formatter=##class(%JSON.Formatter).%New()   
-do formatter.Format(js1)  
-{   
-  "Name":"Cunningham,John C.",  
-  "SSN":"294-11-9150",  
-  "DOB":"1933-01-08",  
-  "Home":{  
-     "Street":"4249 Ash Street",  
-     "City":"Tampa",  
-     "State":"MD",  
-     "Zip":"30176"  
-  },  
-  "FavoriteColors":\[  
-    "White",  
-    "Red",  
-    "Green"  
-  ]  
-}  
-```  
-Not a big thing.   
-You do it once, you do it twice, and after the 5th time your fingers get tired.
-
 So this is a shorthand to save time and reduce mistyping.
 
-The attached ZZJSON.inc is to be included into your %ZLANGC00.mac
+The attached ZZJSN.inc is to be included into your %ZLANGC00.mac
 ```  
-ZZJSON js1         ; does the Output to Terminal / Device  
+USER>ZZJSN jsn        ; does the Output to Terminal / Device  
+{
+  "Name":"Li,Robert K.",
+  "SSN":"672-92-9664",
+  "DOB":"1975-01-12",
+  "Home":{
+    "Street":"986 Washington Blvd",
+    "City":"Boston",
+    "State":"PA",
+    "Zip":"95802"
+  },
+  "Office":{
+    "Street":"6012 First Place",
+    "City":"Reston",
+    "State":"MT",
+    "Zip":"77739"
+  },
+  "Spouse":{
+    "Name":"Avery,Zelda H.",
+    "SSN":"323-13-7437",
+    "DOB":"1943-03-27",
+    "Home":{
+      "Street":"196 Main Drive",
+      "City":"Youngstown",
+      "State":"WY",
+      "Zip":"53229"
+    },
+    "Office":{
+      "Street":"4056 Franklin Court",
+      "City":"Bensonhurst",
+      "State":"IA",
+      "Zip":"27688"
+    },
+    "FavoriteColors":[
+      "Black"
+    ],
+    "Age":77
+  },
+  "Age":45,
+  "Title":"Associate Marketing Manager",
+  "Salary":10421
+}
 ```  
 ```  
 set st=##class(%Stream.GlobalCharacter).%New()
-ZZJSON js1:st      ; write result to Stream
+ZZJSON jsn:st      ; write result to Stream
 ```  
 ```  
-ZZJSON js1:"BOBBY"  ; writes it to local variable BOBBY
+ZZJSON jsn:"BOBBY"  ; writes it to local variable BOBBY
 ```  
