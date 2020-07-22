@@ -3,12 +3,12 @@
   <Document name="fast-json-format-cache.ZPM">
     <Module>
       <Name>fast-json-format-cache</Name>
-      <Version>1.0.0</Version>
+      <Version>1.0.1</Version>
       <Description>produce pretty JSON output for Caché / Ensemble</Description>
       <Keywords>JSON, COS, SYS</Keywords>
       <Packaging>module</Packaging>
       <SourcesRoot>src</SourcesRoot>
-       <Resource Name="ZZJSON.INC"/>
+       <Resource Name="ZZJSN.INC"/>
     </Module>
   </Document>
 </Export>
