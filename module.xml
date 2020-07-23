@@ -4,7 +4,7 @@
     <Module>
       <Name>cache-fast-json</Name>
       <Version>1.0.2</Version>
-      <Description>produce pretty JSON output for Caché + Ensemble</Description>
+      <Description>produce pretty JSON output for Cache + Ensemble</Description>
       <Keywords>JSON, COS, SYS</Keywords>
       <Packaging>module</Packaging>
       <SourcesRoot>src</SourcesRoot>
