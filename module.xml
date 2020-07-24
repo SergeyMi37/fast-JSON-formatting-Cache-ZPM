@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Export generator="Cache" version="25">
-  <Document name="cache-fast-json.ZPM">
+  <Document name="fast-json-format-cache.ZPM">
     <Module>
-      <Name>cache-fast-json</Name>
-      <Version>1.0.3</Version>
+      <Name>fast-json-format-cache/Name>
+      <Version>1.0.4</Version>
       <Description>produce pretty JSON output for Cache + Ensemble</Description>
       <Keywords>JSON, COS, SYS</Keywords>
       <Packaging>module</Packaging>
