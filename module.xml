@@ -2,7 +2,7 @@
 <Export generator="Cache" version="25">
   <Document name="fast-json-format-cache.ZPM">
     <Module>
-      <Name>fast-json-format-cache<Name>
+      <Name>fast-json-format-cache</Name>
       <Version>1.0.5</Version>
       <Description>produce pretty JSON output for Cache + Ensemble</Description>
       <Keywords>JSON, COS, SYS</Keywords>
