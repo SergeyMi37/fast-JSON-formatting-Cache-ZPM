@@ -73,3 +73,5 @@ __output to string__
 ```  
 ZZJSN jsn:"BOBBY"  ; writes it to local variable BOBBY
 ```  
+
+[Article in DC](https://community.intersystems.com/post/fast-json-formatting-cach%C3%A9-ensemble)
