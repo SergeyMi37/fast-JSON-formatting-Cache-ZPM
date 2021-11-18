@@ -3,7 +3,7 @@
   <Document name="cache-fast-json.ZPM">
     <Module>
       <Name>cache-fast-json</Name>
-      <Version>1.0.9</Version>
+      <Version>1.0.10</Version>
       <Description>produce pretty JSON output for Cache + Ensemble</Description>
       <Keywords>JSON, COS, SYS</Keywords>
       <Packaging>module</Packaging>
